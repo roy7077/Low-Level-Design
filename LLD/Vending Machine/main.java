@@ -26,7 +26,7 @@ public class main {
             vendingMachine.vendingMachineState.clickOnStartProductSelectionButton();
             vendingMachine.vendingMachineState.clickOnStartProductSelectionButton();
             vendingMachine.getStateName();
-            vendingMachine.vendingMachineState.chooseProduct(1);  
+           vendingMachine.vendingMachineState.chooseProduct(1);  
            // vendingMachine.vendingMachineState.dispenseProduct();
 
         } catch (Exception e) {

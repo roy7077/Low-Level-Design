@@ -33,8 +33,9 @@ public class SelectionState implements StateInterface{
             return ;
         }
 
-        if(sh.getItem().getPrice()<=sum && !sh.getIsSoldOut())
-        this.vm.setVendingMachineState(new DispenseState(vm, codeNumber,sum-sh.getItem().getPrice()));
+        if(sh.getItem().getPrice()<=sum && !sh.getIsSoldOut()){
+            this.vm.setVendingMachineState(new DispenseState(vm, codeNumber,sum-sh.getItem().getPrice()));
+        }
         else
         throw new Error("Ammount is insufficient");
     }

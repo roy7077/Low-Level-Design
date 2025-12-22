@@ -15,6 +15,7 @@ public class DispenseState implements StateInterface{
     private int codeNumber=-1;
     VendingMachine vm;
     public DispenseState(VendingMachine vm,int codeNumber,int balance)  throws Exception {
+        System.out.println("Yes in this despense");
         this.vm=vm;
         this.codeNumber=codeNumber;
         this.balance=balance;
